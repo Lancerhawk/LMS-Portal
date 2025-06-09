@@ -1,0 +1,50 @@
+:root {
+  --background-color: #F1E7E7;
+  --navbar-background: #332D56;
+  --surface-light: rgb(235, 254, 255);
+  --background-light: WHITE;
+  --text-color: rgb(0, 0, 0);
+  --card-color: WHITE;
+  --primary-light: #332D56;
+  --secondary-light: #554cff; 
+  --border-color: #e2e8f0;
+  --accent-light: #3b82f6;
+  --success-light: #10b981;
+  --warning-light: #f59e0b;
+  --error-light: #ef4444;
+  --border-light: #e5e7eb;
+
+
+  --surface-dark: #1f2937;
+  --accent-dark: #60a5fa;
+  --success-dark: #34d399;
+  --warning-dark: #fbbf24;
+  --error-dark: #f87171;
+  --border-dark: #374151;
+
+  --accent: var(--accent-light);
+  --success: var(--success-light);
+  --warning: var(--warning-light);
+  --error: var(--error-light);
+  --border: var(--border-light);
+  --color-text: black;
+}
+
+.dark {
+  --text-color: white;
+  --card-color: #111827;
+  --surface-light: var(--surface-dark);
+  --success: var(--success-dark);
+  --warning: var(--warning-dark);
+  --error: var(--error-dark);
+  --border: var(--border-dark);
+  --color-text: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  background-color: var(--surface-light);
+  color: var(--text-primary);
+}
