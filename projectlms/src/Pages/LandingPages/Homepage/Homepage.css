@@ -1,5 +1,5 @@
-.homepage-container {
-  padding-top: 70px;
+.hero-logo-img{
+width: 320px;
 }
 
 .hero-section {
@@ -102,7 +102,7 @@
   color: var(--text-color);
 }
 
-.courses-grid {
+.courses-grid-homepage {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
@@ -110,7 +110,7 @@
   margin: 0 auto;
 }
 
-.course-card {
+.course-card-homepage {
   background-color: var(--card-color);
   border-radius: 1rem;
   overflow: hidden;
@@ -122,9 +122,9 @@
   animation: fadeInUp 0.8s ease-out backwards;
 }
 
-.course-card:nth-child(1) { animation-delay: 0.3s; }
-.course-card:nth-child(2) { animation-delay: 0.6s; }
-.course-card:nth-child(3) { animation-delay: 0.9s; }
+.course-card-homepage:nth-child(1) { animation-delay: 0.3s; }
+.course-card-homepage:nth-child(2) { animation-delay: 0.6s; }
+.course-card-homepage:nth-child(3) { animation-delay: 0.9s; }
 
 @keyframes fadeInUp {
   from {
@@ -137,7 +137,7 @@
   }
 }
 
-.course-card:hover {
+.course-card-homepage:hover {
   transform: translateY(-5px);
   border-color: var(--primary-light);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12),
@@ -279,6 +279,9 @@
   .hero-content h1 {
     font-size: 2rem;
   }
+  .hero-logo-img{
+    width: 200px;
+  }
 
   .hero-content p {
     font-size: 1rem;
@@ -288,7 +291,16 @@
     font-size: 2rem;
   }
 
-  .courses-grid {
+  .course-meta>span{
+    font-size: 12px;
+    padding: 2px 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .courses-grid-homepage {
     grid-template-columns: 1fr;
     padding: 0 1rem;
   }

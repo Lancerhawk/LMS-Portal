@@ -7,9 +7,8 @@ import Homepage from './Pages/LandingPages/Homepage/Homepage'
 import Navbar from './Components/Navbar/Navbar'
 import Login from './Pages/AuthsPages/LoginPage/Login'
 import ContactUsPage from './Pages/LandingPages/ContactUs/ContactUsPage'
-import StudentSignup from './Pages/AuthsPages/RegisterPage/Studentsignup'
-import TeacherSignup from './Pages/AuthsPages/RegisterPage/TeacherSignup'
-import AdminsPanel from './Pages/Dashboards/AdminPanel/AdminsDashboard/AdminsPanel'
+import StudentSignup from './Pages/AuthsPages/RegisterPage/StudentSignup.jsx'
+import TeacherSignup from './Pages/AuthsPages/RegisterPage/TeacherSignup.jsx'
 import DashboardLayout from './Pages/Dashboards/DashboardLayout'
 
 function ScrollToTop() {

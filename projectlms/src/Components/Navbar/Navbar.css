@@ -6,14 +6,14 @@
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     z-index: 1000;
     backdrop-filter: blur(10px);
-    opacity: 0.95;
+    /* opacity: 0.95; */
     /* border-bottom: 1px solid var(--border); */
 }
 
 .navbar-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0.5rem 2rem;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,6 +27,9 @@
     letter-spacing: -0.5px;
     position: relative;
     padding: 0.25rem 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .navbar-logo::after {
@@ -47,7 +50,7 @@
 .navbar-links {
     display: flex;
     gap: 3rem;
-    margin-left: 45px;
+    margin-left: -30px;
     align-items: center;
 }
 
@@ -145,7 +148,14 @@
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
+.logo-img {
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    /* border-radius: 50%; */
+}
+
+@media (max-width: 868px) {
 
     .navbar-container {
         padding: 0.5rem .5rem;

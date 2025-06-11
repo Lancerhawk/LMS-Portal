@@ -32,7 +32,7 @@ function Homepage() {
       <section className="hero-section">
         <div className="hero-content">
           <div className='logo'>
-            <img src={logo} alt="Logo"/>
+            <img src={logo} alt="Logo" className='hero-logo-img'/>
           </div>
           <h1>Excellence in Education from Class 1 to 12</h1>
           <p>Join Lakshay Academy for comprehensive academic coaching with experienced teachers and proven results.</p>
@@ -42,9 +42,9 @@ function Homepage() {
 
       <section className="featured-courses">
         <h2>Featured Courses</h2>
-        <div className="courses-grid">
+        <div className="courses-grid-homepage">
           {featuredCourses.map(course => (
-            <div key={course.id} className="course-card">
+            <div key={course.id} className="course-card-homepage">
               <div className="course-content">
                 <h3>{course.title}</h3>
                 <p>{course.description}</p>

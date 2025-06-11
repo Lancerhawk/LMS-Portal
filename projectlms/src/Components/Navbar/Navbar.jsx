@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
+import logo from '../../assets/navbar-logo.png';
 
 const Navbar = () => {
   const [isDark, setIsDark] = useState(false);
@@ -23,20 +24,20 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          Laksay Academy
+          <img src={logo} alt="logo" className="logo-img" /> Lakshya Academy
         </Link>
 
         <div className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
-          <Link to="/" className={`nav-link ${isActiveLink('/')}`}>
+          <Link to="/" className={`nav-link ${isActiveLink('/')}`} onClick={() => setIsMobileMenuOpen(false)}>
             Home
           </Link>
-          <Link to="/about" className={`nav-link ${isActiveLink('/about')}`}>
+          <Link to="/about" className={`nav-link ${isActiveLink('/about')}`} onClick={() => setIsMobileMenuOpen(false)}>
             About
           </Link>
-          <Link to="/courses" className={`nav-link ${isActiveLink('/courses')}`}>
+          <Link to="/courses" className={`nav-link ${isActiveLink('/courses')}`} onClick={() => setIsMobileMenuOpen(false)}>
             Courses
           </Link>
-          <Link to="/contact" className={`nav-link ${isActiveLink('/contact')}`}>
+          <Link to="/contact" className={`nav-link ${isActiveLink('/contact')}`} onClick={() => setIsMobileMenuOpen(false)}>
             Contact
           </Link>
         </div>

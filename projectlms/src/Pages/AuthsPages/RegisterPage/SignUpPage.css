@@ -213,6 +213,10 @@
 }
 
 @media (max-width: 768px) {
+.signup-container{
+  padding: 6rem 1rem;
+}
+
   .signup-card {
     padding: 20px;
   }

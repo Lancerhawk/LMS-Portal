@@ -131,7 +131,7 @@ function Login() {
                 checked={formData.rememberMe}
                 onChange={handleChange}
               />
-              Remember me
+              <span>Remember me</span>
             </label>
             <Link to='/forgot-password' className='forgot-password'>Forgot Password?</Link>
           </div>
