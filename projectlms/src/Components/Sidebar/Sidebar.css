@@ -1,20 +1,21 @@
 .sb-sidebar {
     position: fixed;
     left: 0;
-    top: 70px;
-    height: calc(100dvh - 102px);
+    top: 55px;
+    padding-top: 56px;
+    height: calc(100dvh - 88px);
     width: 280px;
     background-color: var(--navbar-background);
     padding: 1rem;
     transition: all 0.3s ease;
     display: flex;
-    z-index: 1001;
+    /* z-index: 1001; */
     flex-direction: column;
-    border-right: 1px solid var(--border);
+    /* border-right: 1px solid var(--border); */
     overflow: hidden;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     backdrop-filter: blur(10px);
-    opacity: 0.95;
+    /* opacity: 0.95; */
 }
 
 .sb-nav-links::-webkit-scrollbar {
@@ -40,14 +41,14 @@
 
 .sb-toggle-btn {
     position: fixed;
-    left: 1rem;
-    top: 4.5rem;
+    left: 1.2rem;
+    top: 4rem;
     z-index: 1002;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 0.5rem 0.5rem;
     display: flex;
     align-items: center;
@@ -55,9 +56,10 @@
     justify-content: center;
     border-radius: 25px;
     transition: all .2s ease;
+    z-index: 999;
 }
 
-.sb-toggle-btn:hover{
+.sb-toggle-btn:hover {
     background: black;
     color: white;
 }
@@ -158,7 +160,7 @@
 
 .sb-user-profile {
     display: flex;
-    align-items: center;    
+    align-items: center;
     padding: 10px 10px;
     border-radius: 10px;
     color: black;
@@ -169,26 +171,27 @@
     transition: all 0.2s ease;
     cursor: pointer;
 
-span{
-    transition: all 0.2s ease;
-    color: black;
-    font-weight: bold;
-}
+    span {
+        transition: all 0.2s ease;
+        color: black;
+        font-weight: bold;
+    }
 }
 
-.sb-user-profile:hover{
+.sb-user-profile:hover {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-span{
-    color: rgb(255, 255, 255);
-}
+
+    span {
+        color: rgb(255, 255, 255);
+    }
 }
 
 .sb-avatar {
     width: 40px;
     height: 40px;
     margin-left: 5px;
-    
+
     border-radius: 50%;
     object-fit: cover;
 }
@@ -224,7 +227,7 @@ span{
 }
 
 .sb-action-btn:last-child {
-display: flex;
+    display: flex;
     align-items: center;
     gap: 0.75rem;
     font-size: 1rem;
@@ -249,7 +252,7 @@ display: flex;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.sb-action-btn:last-child:hover{
+.sb-action-btn:last-child:hover {
     color: white;
     background-position: -100% 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -273,4 +276,13 @@ display: flex;
 
 .sb-action-btn:hover::after {
     height: 70%;
+}
+
+@media (max-width: 868px) {
+
+    
+}
+
+.sb-sidebar{
+
 }

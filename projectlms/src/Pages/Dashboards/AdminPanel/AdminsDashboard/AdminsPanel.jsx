@@ -3,7 +3,7 @@ import './AdminsPanel.css';
 function AdminsPanel() {
   return (
     <div className="admins-container">
-      <h1>Admins Panel</h1>
+      <h1>Admins</h1>
     </div>
   );
 }

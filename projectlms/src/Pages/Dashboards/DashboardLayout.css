@@ -9,9 +9,3 @@
     margin-left: 80px;
 }
 
-@media (max-width: 668px) {
-    .Dashboard-Container{
-        padding: 0;
-        margin-left: 70px;
-    }
-}

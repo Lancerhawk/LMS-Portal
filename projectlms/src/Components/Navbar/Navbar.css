@@ -157,10 +157,6 @@
 
 @media (max-width: 868px) {
 
-    .navbar-container {
-        padding: 0.5rem .5rem;
-    }
-
     .navbar-logo {
         display: none;
     }

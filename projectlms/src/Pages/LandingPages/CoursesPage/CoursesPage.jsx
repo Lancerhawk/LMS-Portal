@@ -494,10 +494,10 @@ function CoursesPage() {
       </section>
 
       {/* Courses Grid */}
-      <section className="courses-grid">
+      <section className="courses-grid-landingpage">
         {filteredCourses.map(course => (
-          <div key={course.id} className="course-card">
-            <div className="course-content">
+          <div key={course.id} className="course-card-landingpage">
+            <div className="course-content-landingpage">
               <h3>{course.title}</h3>
               <p className="instructor">by {course.instructor}</p>
               <p className="description">{course.description}</p>
