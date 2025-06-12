@@ -2,13 +2,10 @@ import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useUser } from '../../../context/UserContext';
 import { FiSettings, FiLogOut, FiMenu, FiX } from 'react-icons/fi';
-import {
-    MdAdminPanelSettings,
-    MdPerson,
-    MdGroups,
-    MdNotifications
-} from 'react-icons/md';
+import { MdNotifications, MdAttachMoney, MdMenuBook } from 'react-icons/md';
+import { HiUserGroup } from 'react-icons/hi';
 import { FaUser } from 'react-icons/fa';
+import { PiChalkboardTeacherFill } from 'react-icons/pi';
 import '../Sidebar.css';
 
 function AdminSidebar() {
@@ -34,20 +31,20 @@ function AdminSidebar() {
 
             <div className={`sb-sidebar ${isCollapsed ? 'sb-collapsed' : ''}`}>
                 <nav className="sb-nav-links">
-                    <Link to="/dashboard/allsubjects" className={`sb-nav-link ${location.pathname === '/dashboard/allsubjects' ? 'active' : ''}`}>
-                        <MdAdminPanelSettings className="sb-nav-icon" />
-                        {!isCollapsed && <span>Subjects Management</span>}
-                    </Link>
-                    <Link to="/dashboard/allteachers" className={`sb-nav-link ${location.pathname === '/dashboard/allteachers' ? 'active' : ''}`}>
-                        <MdPerson className="sb-nav-icon" />
-                        {!isCollapsed && <span>Teachers Management</span>}
-                    </Link>
                     <Link to="/dashboard/allstudents" className={`sb-nav-link ${location.pathname === '/dashboard/allstudents' ? 'active' : ''}`}>
-                        <MdGroups className="sb-nav-icon" />
+                        <HiUserGroup className="sb-nav-icon" />
                         {!isCollapsed && <span>Students & Classes</span>}
                     </Link>
+                    <Link to="/dashboard/allteachers" className={`sb-nav-link ${location.pathname === '/dashboard/allteachers' ? 'active' : ''}`}>
+                        <PiChalkboardTeacherFill className="sb-nav-icon" />
+                        {!isCollapsed && <span>Teachers Management</span>}
+                    </Link>
+                    <Link to="/dashboard/allsubjects" className={`sb-nav-link ${location.pathname === '/dashboard/allsubjects' ? 'active' : ''}`}>
+                        <MdMenuBook className="sb-nav-icon" />
+                        {!isCollapsed && <span>Subjects Management</span>}
+                    </Link>
                     <Link to="/dashboard/fees-structure" className={`sb-nav-link ${location.pathname === '/dashboard/fees-structure' ? 'active' : ''}`}>
-                        <MdGroups className="sb-nav-icon" />
+                        <MdAttachMoney className="sb-nav-icon" />
                         {!isCollapsed && <span>Fees Management</span>}
                     </Link>
                     <Link to="/dashboard/notifications" className={`sb-nav-link ${location.pathname === '/dashboard/notifications' ? 'active' : ''}`}>

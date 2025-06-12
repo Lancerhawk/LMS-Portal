@@ -243,6 +243,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    /* flex-wrap: wrap; */
 }
 
 .AdminPanel_Model_Registerstudent_form_row {
@@ -428,6 +429,7 @@
 
 .AdminPanel_Model_Registerstudent_details_row {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
 }
@@ -489,19 +491,37 @@
     .AdminPanel_Model_Registerstudent_container {
         padding: 0.2rem;
     }
+
+    
+    .AdminPanel_Model_Registerstudent_modal {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        max-width: 98vw;
+    }
 }
 
 @media (max-width: 700px) {
     .AdminPanel_Model_Registerstudent_modal {
         padding: 1.2rem 0.5rem 1rem 0.5rem;
-        max-width: 98vw;
+        max-width: 78vw;
     }
 
     .AdminPanel_Model_Registerstudent_details_row {
         flex-direction: column;
-        gap: 1.5rem;
-        padding: 1.2rem 0.5rem 1rem 0.5rem;
-        align-items: center;
+        text-align: center;
+        gap: 0rem;
+    }
+
+    .AdminPanel_Model_Registerstudent_form>.AdminPanel_Model_Registerstudent_form_row{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .AdminPanel_Model_Registerstudent_form{
+        padding: 1rem;
+    }
+
+    .AdminPanel_Model_Registerstudent_modal>h2{
+        font-size: 1.6rem;
     }
 
     .AdminPanel_Model_Registerstudent_details_img {
@@ -519,6 +539,12 @@
         display: none;
     }
 }
+
+.AdminPanel_Model_Registerstudent_password_input{
+    flex-wrap: wrap;
+}
+
+
 
 @media (max-width: 800px) {
 
@@ -552,3 +578,26 @@
     margin-top: 0;
     letter-spacing: 0.2px;
 }
+
+
+
+
+@media (max-width: 400px){
+    .AdminPanel_Model_Registerstudent_modal_buttons button{
+      font-size: 0.8rem!important;
+    }
+  
+    .AdminPanel_Model_Registerstudent_modal_buttons{
+      padding: 0;
+      width: 100%;
+    }
+  
+    .AdminPanel_Model_Registerstudent_modal{
+      padding: 0.4rem;
+    }
+
+    .AdminPanel_Model_Registerstudent_modal>h2{
+        font-size: 1.3rem;
+    }
+  }
+  

@@ -221,15 +221,16 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  padding: 1rem;
 }
 
 .AdminPanel_Model_Registerteacher_modal {
   background-color: var(--surface-light);
   padding: 2rem;
   border-radius: 8px;
-  width: 95%;
+  width: 90%;
   max-width: 700px;
-  max-height: 80vh;
+  max-height: 70vh;
   overflow-y: auto;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
 }
@@ -267,6 +268,35 @@
   margin-bottom: 0.2rem;
 }
 
+@media (max-width: 700px){
+  .AdminPanel_Model_Registerteacher_form_col label {
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+  text-align: start;
+  }
+
+  .AdminPanel_Model_Registerteacher_modal h2{
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 400px){
+  .AdminPanel_Model_Registerteacher_modal_buttons button{
+    padding: 1rem!important;
+    font-size: 0.8rem!important;
+  }
+
+  .AdminPanel_Model_Registerteacher_modal_buttons{
+    padding: 0;
+    width: 100%;
+  }
+
+  .AdminPanel_Model_Registerteacher_modal{
+    padding: 1rem;
+  }
+
+}
+
 .AdminPanel_Model_Registerteacher_form input,
 .AdminPanel_Model_Registerteacher_form select,
 .AdminPanel_Model_Registerteacher_form textarea {
@@ -289,6 +319,11 @@
 .AdminPanel_Model_Registerteacher_form textarea {
   min-height: 70px;
   resize: vertical;
+}
+
+.AdminPanel_Model_Registerteacher_password_input{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .AdminPanel_Model_Registerteacher_form_img_preview {
