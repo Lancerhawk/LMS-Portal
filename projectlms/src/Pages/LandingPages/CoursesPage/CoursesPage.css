@@ -82,7 +82,7 @@
 
 .courses-grid-landingpage {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   width: 100%;
   box-sizing: border-box;
@@ -162,7 +162,7 @@
   color: var(--text-color);
 }
 
-.enroll-btn {
+.enroll-btn-landingpage {
   padding: 0.75rem 1.5rem;
   background-color: var(--primary-light);
   color: white;
@@ -172,8 +172,8 @@
   transition: all 0.3s ease;
 }
 
-.enroll-btn:hover {
-  background-color: var(--primary-light);
+.enroll-btn-landingpage:hover {
+  background-color: var(--secondary-light);
   transform: translateY(-1px);
 }
 

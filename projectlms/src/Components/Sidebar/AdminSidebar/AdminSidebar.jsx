@@ -34,17 +34,21 @@ function AdminSidebar() {
 
             <div className={`sb-sidebar ${isCollapsed ? 'sb-collapsed' : ''}`}>
                 <nav className="sb-nav-links">
-                    <Link to="/dashboard/admin" className={`sb-nav-link ${location.pathname === '/dashboard/admin' ? 'active' : ''}`}>
+                    <Link to="/dashboard/allsubjects" className={`sb-nav-link ${location.pathname === '/dashboard/allsubjects' ? 'active' : ''}`}>
                         <MdAdminPanelSettings className="sb-nav-icon" />
-                        {!isCollapsed && <span>Admin Dashboard</span>}
+                        {!isCollapsed && <span>Subjects Management</span>}
                     </Link>
                     <Link to="/dashboard/allteachers" className={`sb-nav-link ${location.pathname === '/dashboard/allteachers' ? 'active' : ''}`}>
                         <MdPerson className="sb-nav-icon" />
-                        {!isCollapsed && <span>All Teachers</span>}
+                        {!isCollapsed && <span>Teachers Management</span>}
                     </Link>
                     <Link to="/dashboard/allstudents" className={`sb-nav-link ${location.pathname === '/dashboard/allstudents' ? 'active' : ''}`}>
                         <MdGroups className="sb-nav-icon" />
-                        {!isCollapsed && <span>All Students</span>}
+                        {!isCollapsed && <span>Students & Classes</span>}
+                    </Link>
+                    <Link to="/dashboard/fees-structure" className={`sb-nav-link ${location.pathname === '/dashboard/fees-structure' ? 'active' : ''}`}>
+                        <MdGroups className="sb-nav-icon" />
+                        {!isCollapsed && <span>Fees Management</span>}
                     </Link>
                     <Link to="/dashboard/notifications" className={`sb-nav-link ${location.pathname === '/dashboard/notifications' ? 'active' : ''}`}>
                         <MdNotifications className="sb-nav-icon" />

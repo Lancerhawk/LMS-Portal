@@ -1,0 +1,554 @@
+/* Container and Header */
+.AdminPanel_Model_Registerstudent_container {
+    padding: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.AdminPanel_Model_Registerstudent_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 1.2rem 2rem;
+    background: var(--primary-light);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    margin-bottom: 2.5rem;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.AdminPanel_Model_Registerstudent_add_btn {
+    padding: 0.7rem 2rem;
+    border-radius: 10px;
+    background-color: var(--secondary-light);
+    border: 2px solid var(--secondary-light);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.AdminPanel_Model_Registerstudent_add_btn:hover {
+    background-color: var(--primary-light);
+}
+
+.AdminPanel_Model_Registerstudent_search {
+    padding: 0.9rem 1.2rem 0.9rem 2.7rem;
+    width: 340px;
+    border: 1.5px solid var(--border);
+    border-radius: 7px;
+    font-size: 1.08rem;
+    color: var(--text-color);
+    background: #fff url('data:image/svg+xml;utf8,<svg fill="%23999" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99c.41.41 1.09.41 1.5 0s.41-1.09 0-1.5l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>') no-repeat 10px center;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.AdminPanel_Model_Registerstudent_search:focus {
+    border: 1.5px solid var(--primary-light);
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.09);
+}
+
+.AdminPanel_Model_Registerstudent_search::placeholder {
+    color: #b0b8c1;
+    font-size: 1.05rem;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+/* Cards and Table */
+.AdminPanel_Model_Registerstudent_cards_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 2rem;
+}
+
+.AdminPanel_Model_Registerstudent_card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+    border: 2px solid var(--border);
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    transition: all .2s ease;
+}
+
+.AdminPanel_Model_Registerstudent_card:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12),
+        0 0 4px rgba(0, 0, 0, 0.06),
+        0 0 0 1px rgba(0, 0, 0, 0.03);
+    border-color: var(--secondary-light);
+}
+
+.AdminPanel_Model_Registerstudent_card_header {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.2rem;
+    gap: 1.5rem;
+    min-width: 0;
+}
+
+.AdminPanel_Model_Registerstudent_card_header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.AdminPanel_Model_Registerstudent_card_teachers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem 1.2rem;
+}
+
+.AdminPanel_Model_Registerstudent_card_teacher_subject {
+    font-weight: 600;
+    color: green;
+}
+
+.AdminPanel_Model_Registerstudent_card_teacher_name {
+    margin-left: 0.3rem;
+    color: var(--text-color);
+}
+
+.AdminPanel_Model_Registerstudent_card_table_container {
+    margin: 0 auto 1.2rem auto;
+    width: 100%;
+    overflow-x: auto;
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+.AdminPanel_Model_Registerstudent_card_table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f8fafc;
+    /* border-radius: 8px; */
+    /* overflow-y: scroll; */
+    /* overflow: hidden; */
+}
+
+.AdminPanel_Model_Registerstudent_card_table th,
+.AdminPanel_Model_Registerstudent_card_table td {
+    padding: 0.7rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.AdminPanel_Model_Registerstudent_card_table th {
+    background: var(--primary-light);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.08rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.AdminPanel_Model_Registerstudent_card_table tr:first-child td {
+    border-top: none;
+}
+
+.AdminPanel_Model_Registerstudent_viewdetails_btn {
+    background: var(--primary-light);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1.1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.AdminPanel_Model_Registerstudent_viewdetails_btn:hover {
+    background: var(--secondary-light);
+}
+
+.AdminPanel_Model_Registerstudent_card_footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.AdminPanel_Model_Registerstudent_addteacher_btn,
+.AdminPanel_Model_Registerstudent_viewscore_btn {
+    background: var(--secondary-light);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.AdminPanel_Model_Registerstudent_addteacher_btn:hover,
+.AdminPanel_Model_Registerstudent_viewscore_btn:hover {
+    background: var(--primary-light);
+}
+
+/* Registration Modal */
+.AdminPanel_Model_Registerstudent_modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.AdminPanel_Model_Registerstudent_modal {
+    background-color: var(--surface-light);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 95%;
+    max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
+}
+
+.AdminPanel_Model_Registerstudent_modal h2 {
+    margin: 0 0 1.5rem 0;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.AdminPanel_Model_Registerstudent_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.AdminPanel_Model_Registerstudent_form_row {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.AdminPanel_Model_Registerstudent_form_col {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.AdminPanel_Model_Registerstudent_form_col label {
+    font-size: 0.98rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.AdminPanel_Model_Registerstudent_form input,
+.AdminPanel_Model_Registerstudent_form select,
+.AdminPanel_Model_Registerstudent_form textarea {
+    padding: 0.7rem;
+    border: 1px solid var(--in-border);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--text-color);
+    background: transparent;
+    transition: border 0.2s;
+}
+
+.AdminPanel_Model_Registerstudent_form input:focus,
+.AdminPanel_Model_Registerstudent_form select:focus,
+.AdminPanel_Model_Registerstudent_form textarea:focus {
+    border: 1.5px solid #2196F3;
+    outline: none;
+}
+
+.AdminPanel_Model_Registerstudent_form textarea {
+    min-height: 70px;
+    resize: vertical;
+}
+
+.AdminPanel_Model_Registerstudent_form_img_preview {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    border: 1px solid #eee;
+    background: #f2f2f2;
+    align-self: flex-start;
+}
+
+.AdminPanel_Model_Registerstudent_modal_buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.AdminPanel_Model_Registerstudent_modal_buttons button {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.AdminPanel_Model_Registerstudent_modal_buttons button[type="submit"] {
+    background-color: var(--primary-light);
+    border: 2px solid var(--border);
+    color: white;
+}
+
+.AdminPanel_Model_Registerstudent_modal_buttons button[type="submit"]:hover {
+    background-color: var(--secondary-light);
+}
+
+.AdminPanel_Model_Registerstudent_modal_buttons button[type="button"] {
+    background-color: var(--primary-light);
+    border: 2px solid var(--border);
+    color: white;
+}
+
+.AdminPanel_Model_Registerstudent_modal_buttons button[type="button"]:hover {
+    background-color: var(--secondary-light);
+}
+
+.AdminPanel_Model_Registerstudent_password_input {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.AdminPanel_Model_Registerstudent_password_input input[type="password"],
+.AdminPanel_Model_Registerstudent_password_input input[type="text"] {
+    flex: 1 1 0;
+    padding: 0.7rem;
+    border: 1.5px solid var(--in-border);
+    border-radius: 7px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.AdminPanel_Model_Registerstudent_password_toggle {
+    background: var(--primary-light);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 0.98rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    transition: background 0.2s;
+}
+
+.AdminPanel_Model_Registerstudent_password_toggle:hover {
+    background: var(--secondary-light);
+}
+
+.AdminPanel_Model_Registerstudent_password_row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.2rem;
+    margin-top: 1.1rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+}
+
+.AdminPanel_Model_Registerstudent_password_value {
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    font-size: 1.1rem;
+    background: white;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    padding: 0.3rem 0.8rem;
+    letter-spacing: 0.15em;
+    min-width: 80px;
+    display: inline-block;
+}
+
+.AdminPanel_Model_Registerstudent_password_edit_btn,
+.AdminPanel_Model_Registerstudent_password_save_btn,
+.AdminPanel_Model_Registerstudent_password_cancel_btn {
+    background: var(--primary-light);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 0.98rem;
+    cursor: pointer;
+    margin-left: 0.3rem;
+    transition: background 0.2s;
+}
+
+.AdminPanel_Model_Registerstudent_password_edit_btn:hover,
+.AdminPanel_Model_Registerstudent_password_save_btn:hover {
+    background: var(--secondary-light);
+}
+
+.AdminPanel_Model_Registerstudent_password_cancel_btn {
+    background: var(--primary-light);
+}
+
+.AdminPanel_Model_Registerstudent_password_cancel_btn:hover {
+    background: var(--secondary-light);
+}
+
+.AdminPanel_Model_Registerstudent_password_edit_input {
+    font-size: 1.1rem;
+    padding: 0.4rem 0.7rem;
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    background: #fff;
+    color: var(--text-color);
+    margin-right: 0.3rem;
+}
+
+.AdminPanel_Model_Registerstudent_details_row {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.AdminPanel_Model_Registerstudent_details_text {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.AdminPanel_Model_Registerstudent_details_img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: #f2f2f2;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+.AdminPanel_Model_Registerstudent_details_text p {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.AdminPanel_Model_Registerstudent_details_text strong {
+    color: green;
+    margin-right: 0.5rem;
+}
+
+.AdminPanel_Model_Registerstudent_close_btn {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background-color: var(--primary-light);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.AdminPanel_Model_Registerstudent_close_btn:hover {
+    background-color: var(--secondary-light);
+}
+
+@media (max-width: 900px) {
+    .AdminPanel_Model_Registerstudent_cards_container {
+        grid-template-columns: 1fr;
+    }
+
+    .AdminPanel_Model_Registerstudent_header {
+        padding: 1rem;
+    }
+
+    .AdminPanel_Model_Registerstudent_container {
+        padding: 0.2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .AdminPanel_Model_Registerstudent_modal {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        max-width: 98vw;
+    }
+
+    .AdminPanel_Model_Registerstudent_details_row {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        align-items: center;
+    }
+
+    .AdminPanel_Model_Registerstudent_details_img {
+        margin-left: 0;
+        margin-top: 1.2rem;
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Hide Enrolled Subjects and Roll Number columns in the table */
+    .AdminPanel_Model_Registerstudent_card_table th.enrolled-subjects-col,
+    .AdminPanel_Model_Registerstudent_card_table td.enrolled-subjects-col,
+    .AdminPanel_Model_Registerstudent_card_table th.rollnumber-col,
+    .AdminPanel_Model_Registerstudent_card_table td.rollnumber-col {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .AdminPanel_Model_Registerstudent_header {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .AdminPanel_Model_Registerstudent_add_btn {
+        padding: 0.5rem 2rem;
+        font-size: 1rem;
+    }
+
+    .AdminPanel_Model_Registerstudent_search {
+        padding: 0.5rem 2rem;
+    }
+
+}
+
+.AdminPanel_Model_Registerstudent_form_section {
+    margin-top: 2.2rem;
+    padding-top: 1.2rem;
+    border-top: 1.5px solid #e0e0e0;
+}
+
+.AdminPanel_Model_Registerstudent_form_section_heading {
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: var(--primary-light);
+    margin-bottom: 1.1rem;
+    margin-top: 0;
+    letter-spacing: 0.2px;
+}

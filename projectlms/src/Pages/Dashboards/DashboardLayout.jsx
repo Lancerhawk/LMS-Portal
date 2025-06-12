@@ -5,7 +5,7 @@ import AdminSidebar from '../../Components/Sidebar/AdminSidebar/AdminSidebar';
 import TeacherSidebar from '../../Components/Sidebar/TeacherSidebar/TeacherSidebar';
 import StudentSidebar from '../../Components/Sidebar/StudentSidebar/StudentSidebar';
 import HomeSection from './HomeSection/HomeSection';
-import AdminsPanel from './AdminPanel/AdminsDashboard/AdminsPanel';
+// import AdminsPanel from './AdminPanel/AdminsDashboard/AdminsPanel';
 import StudentDashboard from './StudentDashboard/StudentDashboard/StudentDashboard';
 import RegisterTeachers from './AdminPanel/Teachers/RegisterTeachers';
 import RegisterStudents from './AdminPanel/RegisterStudents/RegisterStudents';
@@ -17,6 +17,8 @@ import TeachersDashboard from './TeacherDashboard/TeachersDashboard/TeachersDash
 import CreateAssginments from './TeacherDashboard/CreateAssignments/CreateAssginments';
 import Classes from './TeacherDashboard/Classes/Classes';
 import AddNotes from './TeacherDashboard/AddNotes/AddNotes';
+import Subjects from './AdminPanel/Subjects/Subjects';
+import Fees from './AdminPanel/Fees/Fees';
 
 function DashboardLayout() {
     const { userRole } = useUser();
@@ -41,7 +43,7 @@ function DashboardLayout() {
                 <Routes>
                     <Route index element={<Navigate to="home" replace />} />
                     <Route path="home" element={<HomeSection />} />
-                    <Route path="admin" element={<AdminsPanel />} />
+                    {/* <Route path="admin" element={<AdminsPanel />} /> */}
                     <Route path="student" element={<StudentDashboard />} />
                     <Route path="allteachers" element={<RegisterTeachers />} />
                     <Route path="allstudents" element={<RegisterStudents />} />
@@ -53,6 +55,12 @@ function DashboardLayout() {
                     <Route path="createassginments" element={<CreateAssginments />} />
                     <Route path="classes" element={<Classes />} />
                     <Route path="addnotes" element={<AddNotes />} />
+                    
+
+
+                    <Route path="allsubjects" element={<Subjects />} />
+                    <Route path="fees-structure" element={<Fees />} />
+                    {/* <Route path="addnotes" element={<AddNotes />} /> */}
                 </Routes>
             </div>
         </>

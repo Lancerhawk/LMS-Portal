@@ -13,6 +13,12 @@
   --warning-light: #f59e0b;
   --error-light: #ef4444;
   --border-light: #e5e7eb;
+  --in-border: rgba(51, 51, 51, 0.342);
+  --primary-light-low: #332d5631;
+  --card-bg: white;
+
+  --selectbox-bg: white;
+  --selectbox-color: #222;
 
 
   --surface-dark: #1f2937;
@@ -38,7 +44,13 @@
   --warning: var(--warning-dark);
   --error: var(--error-dark);
   --border: var(--border-dark);
+  --in-border: var(--border-dark);
+  --card-bg: var(--primary-light);
   --color-text: white;
+
+  
+  --selectbox-bg: #23272f;
+  --selectbox-color: #fff;
 }
 
 body {

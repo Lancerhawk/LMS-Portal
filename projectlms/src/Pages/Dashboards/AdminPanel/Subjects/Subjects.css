@@ -1,0 +1,270 @@
+.admin_panel_classname_courses_container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .admin_panel_classname_courses_header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .admin_panel_classname_courses_header h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .admin_panel_classname_courses_header p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+  }
+  
+  .admin_panel_classname_search_filter_section {
+    margin-bottom: 2rem;
+  }
+  
+  .AdminPanel_Model_Subjectregister_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 1.2rem 2rem;
+    background: var(--primary-light);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    margin-bottom: 2.5rem;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .AdminPanel_Model_Subjectregister_add_btn{
+    padding: 0.7rem 2rem;
+    border-radius: 10px;
+    background-color: var(--secondary-light);
+    border: 2px solid var(--secondary-light);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all .2s ease;
+  }
+
+  .AdminPanel_Model_Subjectregister_add_btn:hover{
+    background-color: var(--primary-light);
+  }
+  
+  .admin_panel_classname_search_bar input {
+    padding: 0.9rem 1.2rem 0.9rem 2.7rem;
+    width: 340px;
+    border: 1.5px solid var(--border);
+    border-radius: 7px;
+    font-size: 1.08rem;
+    color: var(--text-color);
+    background: #fff url('data:image/svg+xml;utf8,<svg fill="%23999" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99c.41.41 1.09.41 1.5 0s.41-1.09 0-1.5l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>') no-repeat 10px center;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+  }
+  
+  .admin_panel_classname_search_bar input:focus {
+    border: 1.5px solid var(--primary-light);
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.09);
+  }
+  
+  .admin_panel_classname_category_filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .admin_panel_classname_category_btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04),
+                0 0 2px rgba(0, 0, 0, 0.03);
+  }
+  
+  .admin_panel_classname_category_btn:hover {
+    background-color: var(--surface-hover);
+    transform: translateY(-1px);
+  }
+  
+  .admin_panel_classname_category_btn.active {
+    background-color: var(--primary-light);
+    color: white;
+    border-color: var(--secondary-light);
+  }
+  
+  .admin_panel_classname_courses_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .admin_panel_classname_course_content {
+    padding: 1.5rem;
+    background-color: var(--card-color);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .admin_panel_classname_course_content h3 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .admin_panel_classname_instructor {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .admin_panel_classname_description {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .admin_panel_classname_course_card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: var(--card-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 2px solid var(--border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08),
+                0 0 2px rgba(0, 0, 0, 0.04),
+                0 0 0 1px rgba(0, 0, 0, 0.02);
+  }
+  
+  .admin_panel_classname_course_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12),
+                0 0 4px rgba(0, 0, 0, 0.06),
+                0 0 0 1px rgba(0, 0, 0, 0.03);
+    border-color: var(--secondary-light);
+  }
+  
+  .admin_panel_classname_course_meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+  }
+  
+  .admin_panel_classname_rating {
+    color: #ffd700;
+  }
+  
+  .admin_panel_classname_course_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .admin_panel_classname_price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .admin_panel_classname_enroll_btn {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-light);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .admin_panel_classname_enroll_btn:hover {
+    background-color: var(--secondary-light);
+    transform: translateY(-1px);
+  }
+  
+  .admin_panel_classname_no_results {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-color);
+  }
+  
+  .admin_panel_classname_no_results h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+  }
+  
+  @media (max-width: 600px) {
+    .admin_panel_classname_courses_header h1 {
+      font-size: 1.3rem;
+    }
+    .admin_panel_classname_courses_header p {
+      font-size: 0.95rem;
+    }
+    .admin_panel_classname_category_filters {
+      gap: 0.3rem;
+      padding: 0 2px;
+    }
+    .admin_panel_classname_category_btn {
+      padding: 0.4rem 0.7rem;
+      font-size: 0.75rem;
+    }
+    .admin_panel_classname_course_content {
+      padding: 0.8rem;
+    }
+    .admin_panel_classname_course_content h3 {
+      font-size: 1rem;
+    }
+    .admin_panel_classname_instructor,
+    .admin_panel_classname_description,
+    .admin_panel_classname_course_meta,
+    .admin_panel_classname_price,
+    .admin_panel_classname_enroll_btn {
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .admin_panel_classname_courses_container {
+      padding: 40px 10px;
+    }
+    .admin_panel_classname_course_card {
+      width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
+    }
+    .admin_panel_classname_course_content {
+      padding: 1rem;
+    }
+    .admin_panel_classname_course_content h3 {
+      font-size: 1.1rem;
+    }
+    .admin_panel_classname_instructor,
+    .admin_panel_classname_description,
+    .admin_panel_classname_course_meta,
+    .admin_panel_classname_price,
+    .admin_panel_classname_enroll_btn {
+      font-size: 0.9rem;
+    }
+  }
