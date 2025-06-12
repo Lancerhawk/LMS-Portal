@@ -130,7 +130,7 @@
 .theme-toggle-btn:hover {
     border-color: var(--secondary-light);
     /* transform: rotate(360deg); */
-    transform: scale(1.1);
+    transform: scale(1.06);
 }
 
 .mobile-menu-btn {
